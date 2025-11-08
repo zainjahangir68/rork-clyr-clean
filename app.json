@@ -1,64 +1,29 @@
 {
   "expo": {
-    "name": "Clyr",
-    "slug": "clyr",
+    "name": "Rork Clyr",
+    "slug": "rork-clyr",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "clyr",
-    "userInterfaceStyle": "automatic",
-    "sdkVersion": "54.0.0",
-    "newArchEnabled": false,
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.zainjahangir68.clyr",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
+      "bundleIdentifier": "com.rork.clyr"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.zainjahangir68.clyr",
-      "permissions": [
-        "android.permission.VIBRATE",
-        "android.permission.VIBRATE"
-      ]
+      "package": "com.rork.clyr"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://rork.com/"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": "https://rork.com/"
-      },
-      "eas": {
-        "projectId": "2ee1c24a-2701-44aa-85cf-b81f12a68df2"
-      }
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/2ee1c24a-2701-44aa-85cf-b81f12a68df2"
+      "favicon": "./assets/favicon.png"
     }
   }
 }
