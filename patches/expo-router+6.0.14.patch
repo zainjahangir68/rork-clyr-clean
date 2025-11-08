@@ -1,15 +1,18 @@
 diff --git a/node_modules/expo-router/ios/ExpoHead.podspec b/node_modules/expo-router/ios/ExpoHead.podspec
-index 1234567..89abcde 100644
+index 0000000..1111111 100644
 --- a/node_modules/expo-router/ios/ExpoHead.podspec
 +++ b/node_modules/expo-router/ios/ExpoHead.podspec
-@@ -27,7 +27,13 @@ Pod::Spec.new do |s|
+@@ -27,7 +27,14 @@ Pod::Spec.new do |s|
    s.static_framework = true
 
    s.dependency 'ExpoModulesCore'
 -  add_dependency(s, "RNScreens")
-+  # Fix for ExpoHead.podspec nil error on EAS build
++  # 🩹 Fix for "undefined method `[]' for nil:NilClass" during EAS iOS builds
++  # Some Expo build environments fail because add_dependency is undefined.
++  # We guard against it here.
 +  if defined?(add_dependency)
 +    add_dependency(s, "RNScreens")
 +  else
 +    s.dependency "RNScreens"
 +  end
+ end
