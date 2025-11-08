@@ -1,0 +1,11 @@
+diff --git a/node_modules/expo-router/ios/ExpoHead.podspec b/node_modules/expo-router/ios/ExpoHead.podspec
+--- a/node_modules/expo-router/ios/ExpoHead.podspec
++++ b/node_modules/expo-router/ios/ExpoHead.podspec
+@@ -27,7 +27,9 @@
+   s.dependency 'ExpoModulesCore'
+-
+-  add_dependency(s, "RNScreens")
++
++  if defined?(add_dependency)
++    add_dependency(s, "RNScreens")
++  end
