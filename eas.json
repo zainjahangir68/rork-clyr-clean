@@ -1,13 +1,15 @@
 {
+  "cli": {
+    "version": ">= 5.0.4"
+  },
   "build": {
     "production": {
-      "distribution": "store"
-    }
-  },
-  "submit": {
-    "production": {
-      "ios": {
-        "ascAppId": "6754824164"
+      "env": {
+        "NPM_CONFIG_LEGACY_PEER_DEPS": "true",
+        "EXPO_NO_TELEMETRY": "1"
+      },
+      "cache": {
+        "disabled": true
       }
     }
   }
