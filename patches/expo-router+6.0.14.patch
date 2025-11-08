@@ -7,7 +7,7 @@ index 1234567..89abcde 100644
 
    s.dependency 'ExpoModulesCore'
 -  add_dependency(s, "RNScreens")
-+  # Fix: avoid crashing when add_dependency is not available
++  # Fix for ExpoHead.podspec nil error on EAS build
 +  if defined?(add_dependency)
 +    add_dependency(s, "RNScreens")
 +  else
