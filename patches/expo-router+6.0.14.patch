@@ -1,0 +1,17 @@
+diff --git a/node_modules/expo-router/ios/ExpoHead.podspec b/node_modules/expo-router/ios/ExpoHead.podspec
+index 1111111..2222222 100644
+--- a/node_modules/expo-router/ios/ExpoHead.podspec
++++ b/node_modules/expo-router/ios/ExpoHead.podspec
+@@ -27,7 +27,13 @@ Pod::Spec.new do |s|
+   s.static_framework = true
+
+   s.dependency 'ExpoModulesCore'
+-
+-  add_dependency(s, "RNScreens")
++  
++  # ✅ FIX: guard against undefined method for add_dependency
++  if defined?(add_dependency)
++    add_dependency(s, "RNScreens")
++  else
++    s.dependency "RNScreens"
++  end
