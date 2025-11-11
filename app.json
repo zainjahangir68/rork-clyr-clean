@@ -1,25 +1,21 @@
 {
-  "expo": {
-    "name": "Clyr",
-    "slug": "clyr",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "bundleIdentifier": "com.zainjahangir.clyr"
-    },
-    "android": {
-      "package": "com.zainjahangir.clyr"
-    },
-   "extra": {
-  "eas": {
-    "projectId": "6d6e19bb-9954-4d28-90e7-817759c13390"
-  }
+  "name": "Clyr",
+  "slug": "clyr",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "userInterfaceStyle": "light",
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  },
+  "ios": {
+    "bundleIdentifier": "com.zainjahangir.clyr"
+  },
+  "android": {
+    "package": "com.zainjahangir.clyr"
+  },
+  "sdkVersion": "54.0.0",
+  "platforms": ["ios", "android", "web"]
 }
-
