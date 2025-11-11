@@ -17,10 +17,9 @@
     "android": {
       "package": "com.zainjahangir.clyr"
     },
-    "extra": {
-      "eas": {
-        "projectId": "2ee1c24a-2701-44aa-85cf-b81f12a68df2"
-      }
-    }
+   "extra": {
+  "eas": {
+    "projectId": "6d6e19bb-9954-4d28-90e7-817759c13390"
   }
 }
+
