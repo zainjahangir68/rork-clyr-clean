@@ -4,53 +4,22 @@
     "slug": "clyr",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "clyr",
-    "userInterfaceStyle": "automatic",
-    "sdkVersion": "54.0.0",
-    "newArchEnabled": false,
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.zainjahangir68.clyr",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
+      "bundleIdentifier": "com.zainjahangir.clyr"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.zainjahangir68.clyr",
-      "permissions": [
-        "android.permission.VIBRATE"
-      ]
+      "package": "com.zainjahangir.clyr"
     },
-    "web": {
-      "favicon": "./assets/images/favicon.png"
-    },
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": "https://rork.com/"
-      },
-      "eas": {
-        "projectId": "4f787d13-8929-48f2-aafb-1ceeb840f1b7"
-      }
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/4f787d13-8929-48f2-aafb-1ceeb840f1b7"
-    },
+    "platforms": ["ios", "android", "web"],
+    "extra": {},
+    "plugins": [],
     "owner": "znprojectltd"
   }
 }
