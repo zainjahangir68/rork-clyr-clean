@@ -17,6 +17,7 @@
     "android": {
       "package": "com.zainjahangir.clyr"
     },
+    "runtimeVersion": "1.0.0",
     "platforms": ["ios", "android", "web"],
     "extra": {},
     "plugins": [],
